@@ -8,7 +8,6 @@ namespace TaskManager.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
         public string FullName
         {
             get
@@ -16,7 +15,7 @@ namespace TaskManager.Models
                 return FirstName + " " + LastName;
             }
         }
-
         public string email { get; set; }
+        public HashSet<int> TaskIDs { get; set; }
     }
 }

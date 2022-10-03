@@ -11,5 +11,14 @@ namespace TaskManager.Models
         public string Type { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime DueDate { get; set; }
+        public IEnumerable<string> Owners
+        {
+            get
+            {
+                ///Here we will query of owners from user table
+                return null;
+            }
+        }
+
     }
 }
